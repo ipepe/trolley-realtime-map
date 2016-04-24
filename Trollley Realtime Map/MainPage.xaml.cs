@@ -67,6 +67,19 @@ namespace Trollley_Realtime_Map
                 System.Net.Http.HttpClient client = new System.Net.Http.HttpClient();
                 System.Net.Http.HttpResponseMessage responseGet = await client.GetAsync(geturi);
                 json = await responseGet.Content.ReadAsStringAsync();
+// Example response string
+//{"result"=>
+//[{"Status"=>"RUNNING", "FirstLine"=>"9  ", "Lon"=>21.0845242, "Lines"=>"9              ", "Time"=>"2016-04-25T00:21:00", "Lat"=>52.2446175, "LowFloor"=>true, "Brigade"=>"33  "},
+//{"Status"=>"RUNNING", "FirstLine"=>"15 ", "Lon"=>21.0042953, "Lines"=>"15             ", "Time"=>"2016-04-25T00:20:57", "Lat"=>52.2202377, "LowFloor"=>true, "Brigade"=>"2   "},
+//{"Status"=>"RUNNING", "FirstLine"=>"9  ", "Lon"=>20.9886761, "Lines"=>"9              ", "Time"=>"2016-04-25T00:21:00", "Lat"=>52.2245445, "LowFloor"=>true, "Brigade"=>"1   "},
+//{"Status"=>"RUNNING", "FirstLine"=>"1  ", "Lon"=>20.9823017, "Lines"=>"1              ", "Time"=>"2016-04-25T00:20:57", "Lat"=>52.2551384, "LowFloor"=>true, "Brigade"=>"15  "},
+//{"Status"=>"RUNNING", "FirstLine"=>"26 ", "Lon"=>20.9351597, "Lines"=>"26             ", "Time"=>"2016-04-25T00:20:57", "Lat"=>52.2992325, "LowFloor"=>true, "Brigade"=>"1   "},
+//{"Status"=>"RUNNING", "FirstLine"=>"9  ", "Lon"=>21.08494, "Lines"=>"9              ", "Time"=>"2016-04-25T00:20:55", "Lat"=>52.2445412, "LowFloor"=>true, "Brigade"=>"32  "},
+//{"Status"=>"RUNNING", "FirstLine"=>"24 ", "Lon"=>20.9951668, "Lines"=>"24,35          ", "Time"=>"2016-04-25T00:20:50", "Lat"=>52.2263641, "LowFloor"=>true, "Brigade"=>"19  "},
+//{"Status"=>"RUNNING", "FirstLine"=>"9  ", "Lon"=>21.0856323, "Lines"=>"9              ", "Time"=>"2016-04-25T00:20:55", "Lat"=>52.2451477, "LowFloor"=>true, "Brigade"=>"9   "},
+//{"Status"=>"RUNNING", "FirstLine"=>"3  ", "Lon"=>21.0523796, "Lines"=>"3              ", "Time"=>"2016-04-25T00:20:58", "Lat"=>52.2534866, "LowFloor"=>true, "Brigade"=>"5   "},
+//{"Status"=>"RUNNING", "FirstLine"=>"3  ", "Lon"=>21.0609169, "Lines"=>"3              ", "Time"=>"2016-04-25T00:20:59", "Lat"=>52.246788, "LowFloor"=>true, "Brigade"=>"1   "},
+//{"Status"=>"RUNNING", "FirstLine"=>"9  ", "Lon"=>21.0210705, "Lines"=>"9              ", "Time"=>"2016-04-25T00:20:59", "Lat"=>52.2318535, "LowFloor"=>true, "Brigade"=>"34  "}]}
             }
             catch(Exception ex)
             {
